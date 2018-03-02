@@ -131,7 +131,7 @@
 <meta property="og:site_name" content="smileCamo的学习小站">
 <meta property="og:description" content="在每篇文章末尾统一添加“本文结束”标记 在路径\themes\next\layout\_macro中新建passage-end-tag.swig文件,并添加以下内容12345&amp;lt;div&amp;gt;    &amp;#123;% if not is_index %&amp;#125;        &amp;lt;div style=&amp;quot;text-align:center;color: #ccc;font-size">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-31T13:22:37.424Z">
+<meta property="og:updated_time" content="2018-03-02T06:54:48.917Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="主题的配置">
 <meta name="twitter:description" content="在每篇文章末尾统一添加“本文结束”标记 在路径\themes\next\layout\_macro中新建passage-end-tag.swig文件,并添加以下内容12345&amp;lt;div&amp;gt;    &amp;#123;% if not is_index %&amp;#125;        &amp;lt;div style=&amp;quot;text-align:center;color: #ccc;font-size">
@@ -397,7 +397,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  751 字
+                  762 字
                 </span>
               
 
@@ -449,15 +449,13 @@
 </ul>
 <p>完成以上设置之后，在每篇文章之后都会添加</p>
 <h4 id="设置网站的图标Favicon"><a href="#设置网站的图标Favicon" class="headerlink" title="设置网站的图标Favicon"></a>设置网站的图标Favicon</h4><ul>
-<li>在<a href="http://www.easyicon.net" target="_blank" rel="noopener">EasyIcon</a>中找一张（32<em>32）一张(16</em>16)的ico图标,或者去别的网站下载或者制作，然后把图标放在/themes/next/source/images里，并且修改主题配置文件：<blockquote>
-<p>favicon:<br>small: /images/favicon-16x16-next.png #改为你的图片对应的名字<br>medium: /images/favicon-32x32-next.png</p>
-<h4 id="字数统计"><a href="#字数统计" class="headerlink" title="字数统计"></a>字数统计</h4></blockquote>
+<li>在<a href="http://www.easyicon.net" target="_blank" rel="noopener">EasyIcon</a>中找一张（32<em>32）一张(16</em>16)的ico图标,或者去别的网站下载或者制作，然后把图标放在/themes/next/source/images里，并且修改主题配置文件：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">small: /images/favicon-16x16-next.png #改为你的图片对应的名字</span><br><span class="line">medium: /images/favicon-32x32-next.png</span><br></pre></td></tr></table></figure>
 </li>
+</ul>
+<h4 id="字数统计"><a href="#字数统计" class="headerlink" title="字数统计"></a>字数统计</h4><ol>
 <li>执行<code>npm i --save hexo-wordcount</code>命令下载字数统计工具</li>
 <li><p>为了方便地开启和关闭字数统计功能，我们需要在配置文件（站点配置文件或主题配置文件均可）中添加一个键值对：</p>
-<blockquote>
-<p> #开启字数统计<br>word_count: true<br>#关闭字数统计<br>word_count: false</p>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#开启字数统计 </span><br><span class="line">word_count: true</span><br><span class="line">#关闭字数统计</span><br><span class="line">word_count: false</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>修改 post.swig</p>
 </li>
@@ -470,8 +468,8 @@
 <li><p>对于移动端尤其是手机来说，加上字数统计和阅读时间预估后的文章信息显得过于冗长，在稍微小一些的屏幕上甚至会分两行显示。而如果我们仔细观察会发现，使用 Hexo NexT 主题的站点如果开启了评论，那么文章信息处的评论数只会在大尺寸屏幕上显示，在小尺寸屏幕上会直接隐藏掉，这显然是利用了 CSS 的 @media 来适配不同尺寸屏幕，因此我们只需要取巧地在原主题地 CSS 的 @media 中完成隐藏<code>.post-letters-count</code>这个类就可以达成我们的目的.修改位于 <code>themes/next/source/css/_common/components/post</code> 目录下的 <code>post-collapse.styl</code>文件，在文件前几行找到 @media 并修改为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@media (max-width: 767px) &#123;</span><br><span class="line">  .post-letters-count &#123; display: none;&#125;</span><br><span class="line">  .posts-collapse &#123;</span><br><span class="line">    margin: 0 20px;</span><br><span class="line">    .post-title, .post-meta &#123;</span><br><span class="line">      display: block;</span><br><span class="line">      width: auto;</span><br><span class="line">      text-align: left;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-<h4 id="原文链接"><a href="#原文链接" class="headerlink" title="原文链接"></a>原文链接</h4><ul>
+</ol>
+<h4 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h4><ul>
 <li><a href="http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html" target="_blank" rel="noopener">hexo的next主题个性化配置教程</a></li>
 <li><a href="https://juejin.im/post/58eb2fd2a0bb9f006928f8c7" target="_blank" rel="noopener">hexo高阶教程</a></li>
 </ul>
@@ -511,8 +509,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/31/hexo+git 部署简单博客(二)/" rel="next" title="hexo+git 部署简单博客(二)">
-                <i class="fa fa-chevron-left"></i> hexo+git 部署简单博客(二)
+              <a href="/2018/01/31/hexo+git 部署简单博客(一)/" rel="next" title="hexo+git 部署简单博客(一)">
+                <i class="fa fa-chevron-left"></i> hexo+git 部署简单博客(一)
               </a>
             
           </div>
@@ -600,7 +598,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -611,7 +609,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -622,7 +620,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -677,7 +675,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#在每篇文章末尾统一添加“本文结束”标记"><span class="nav-number">1.</span> <span class="nav-text">在每篇文章末尾统一添加“本文结束”标记</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置网站的图标Favicon"><span class="nav-number">2.</span> <span class="nav-text">设置网站的图标Favicon</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字数统计"><span class="nav-number">3.</span> <span class="nav-text">字数统计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#原文链接"><span class="nav-number">4.</span> <span class="nav-text">原文链接</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#在每篇文章末尾统一添加“本文结束”标记"><span class="nav-number">1.</span> <span class="nav-text">在每篇文章末尾统一添加“本文结束”标记</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置网站的图标Favicon"><span class="nav-number">2.</span> <span class="nav-text">设置网站的图标Favicon</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字数统计"><span class="nav-number">3.</span> <span class="nav-text">字数统计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#友情链接"><span class="nav-number">4.</span> <span class="nav-text">友情链接</span></a></li></ol></div>
             
 
           </div>
