@@ -112,7 +112,7 @@
 
 
 
-  <meta name="keywords" content="hexo,git," />
+  <meta name="keywords" content="JS," />
 
 
 
@@ -123,18 +123,20 @@
 
 
 
-<meta name="description" content="首先,我们要知道一个哲学问题我是谁,我在哪,我能干什么 hexo出自台湾大学生tommy351之手，是一个基于Node.js的静态博客程序，其编译上百篇文字只需要几秒。hexo生成的静态网页可以直接放到GitHub Pages，BAE，SAE等平台上。 搭建过程你或许觉得有那么点小繁琐，但一旦搭建完成，写文章是极简单，极舒服的。只需要几个简单命令，你就可以完成一切。">
-<meta name="keywords" content="hexo,git">
+<meta name="description" content="JavaScript中单线程的概念 Js语言的执行环境是“单线程”。所谓”单线程”，就是指一次只能完成一件任务。如果有多个任务，就必须排队，前面一个任务完成，再执行后面一个任务，以此类推。 这样的话就会出现一个弊端,请看下面这个栗子">
+<meta name="keywords" content="JS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo+git 部署简单博客(一)">
-<meta property="og:url" content="http://yoursite.com/2018/01/31/hexo+git 部署简单博客(一)/index.html">
+<meta property="og:title" content="JS中的异步">
+<meta property="og:url" content="http://yoursite.com/2018/02/08/JS中的异步/index.html">
 <meta property="og:site_name" content="smileCamo的学习小站">
-<meta property="og:description" content="首先,我们要知道一个哲学问题我是谁,我在哪,我能干什么 hexo出自台湾大学生tommy351之手，是一个基于Node.js的静态博客程序，其编译上百篇文字只需要几秒。hexo生成的静态网页可以直接放到GitHub Pages，BAE，SAE等平台上。 搭建过程你或许觉得有那么点小繁琐，但一旦搭建完成，写文章是极简单，极舒服的。只需要几个简单命令，你就可以完成一切。">
+<meta property="og:description" content="JavaScript中单线程的概念 Js语言的执行环境是“单线程”。所谓”单线程”，就是指一次只能完成一件任务。如果有多个任务，就必须排队，前面一个任务完成，再执行后面一个任务，以此类推。 这样的话就会出现一个弊端,请看下面这个栗子">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-31T12:09:33.102Z">
+<meta property="og:image" content="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2830126898,3910917481&fm=27&gp=0.jpg">
+<meta property="og:updated_time" content="2018-03-12T10:21:15.263Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo+git 部署简单博客(一)">
-<meta name="twitter:description" content="首先,我们要知道一个哲学问题我是谁,我在哪,我能干什么 hexo出自台湾大学生tommy351之手，是一个基于Node.js的静态博客程序，其编译上百篇文字只需要几秒。hexo生成的静态网页可以直接放到GitHub Pages，BAE，SAE等平台上。 搭建过程你或许觉得有那么点小繁琐，但一旦搭建完成，写文章是极简单，极舒服的。只需要几个简单命令，你就可以完成一切。">
+<meta name="twitter:title" content="JS中的异步">
+<meta name="twitter:description" content="JavaScript中单线程的概念 Js语言的执行环境是“单线程”。所谓”单线程”，就是指一次只能完成一件任务。如果有多个任务，就必须排队，前面一个任务完成，再执行后面一个任务，以此类推。 这样的话就会出现一个弊端,请看下面这个栗子">
+<meta name="twitter:image" content="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2830126898,3910917481&fm=27&gp=0.jpg">
 
 
 
@@ -164,13 +166,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/01/31/hexo+git 部署简单博客(一)/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/08/JS中的异步/"/>
 
 
 
 
 
-  <title>hexo+git 部署简单博客(一) | smileCamo的学习小站</title>
+  <title>JS中的异步 | smileCamo的学习小站</title>
   
 
 
@@ -307,7 +309,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/31/hexo+git 部署简单博客(一)/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/08/JS中的异步/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.杨">
@@ -324,7 +326,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo+git 部署简单博客(一)</h1>
+          <h1 class="post-title" itemprop="name headline">JS中的异步</h1>
         
 
         <div class="post-meta">
@@ -336,8 +338,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-31T16:16:52+08:00">
-                2018-01-31
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-08T17:13:30+08:00">
+                2018-02-08
               </time>
             
 
@@ -359,8 +361,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/git/" itemprop="url" rel="index">
-                    <span itemprop="name">git</span>
+                  <a href="/categories/JS/" itemprop="url" rel="index">
+                    <span itemprop="name">JS</span>
                   </a>
                 </span>
 
@@ -397,7 +399,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  678 字
+                  892 字
                 </span>
               
 
@@ -434,65 +436,39 @@
       
 
       
-        <p>首先,我们要知道一个哲学问题<br>我是谁,我在哪,我能干什么</p>
-<p>hexo出自台湾大学生tommy351之手，是一个基于Node.js的静态博客程序，其编译上百篇文字只需要几秒。hexo生成的静态网页可以直接放到GitHub Pages，BAE，SAE等平台上。</p>
-<p>搭建过程你或许觉得有那么点小繁琐，但一旦搭建完成，写文章是极简单，极舒服的。<br>只需要几个简单命令，你就可以完成一切。</p>
-<a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo n   #写文章</span><br><span class="line">hexo g   #生成</span><br><span class="line">hexo d   #部署 # 可与hexo g合并为 hexo d -g</span><br></pre></td></tr></table></figure>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul>
-<li>安装Node <a href="https://nodejs.org/en/" target="_blank" rel="noopener">下载地址</a>,选择系统对应.msi的版本, 打开下载好的.exe,点击安装,一路next,很简单的小操作</li>
-<li>安装git,<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">下载地址</a>,同样选择对应的版本,安装方法同上<h3 id="注册GitHub账号-连接GitHub"><a href="#注册GitHub账号-连接GitHub" class="headerlink" title="注册GitHub账号,连接GitHub"></a>注册GitHub账号,连接GitHub</h3>在git<a href="https://github.com/" target="_blank" rel="noopener">地址</a>上注册好</li>
-<li>建立对应的仓库<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.在主页点击 + </span><br><span class="line">2.点击 New repository</span><br><span class="line">3.</span><br></pre></td></tr></table></figure>
+        <p><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2830126898,3910917481&amp;fm=27&amp;gp=0.jpg" alt=""></p>
+<h2 id="JavaScript中单线程的概念"><a href="#JavaScript中单线程的概念" class="headerlink" title="JavaScript中单线程的概念"></a>JavaScript中单线程的概念</h2><p> Js语言的执行环境是“单线程”。所谓”单线程”，就是指一次只能完成一件任务。如果有多个任务，就必须排队，前面一个任务完成，再执行后面一个任务，以此类推。<br> 这样的话就会出现一个弊端,请看下面这个栗子<br><a id="more"></a><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">'start'</span>);</span><br><span class="line">alert(<span class="string">'hallo'</span>)</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'end'</span>);</span><br></pre></td></tr></table></figure></p>
+<p>注意看上面的代码,首先我们知道先在控制台打印<code>start</code>,然后在窗口弹出<code>hallo</code>,<br>之后浏览器就一直在加载,只有我们点击确认之后,浏览器才会继续在控制台打印<code>end</code>,<br>这就是JavaScript中的单线程,这样的后果就是阻塞代码的执行</p>
+<h2 id="同步与异步"><a href="#同步与异步" class="headerlink" title="同步与异步"></a>同步与异步</h2><p>为了同步模式下的阻塞问题，Js语言将任务的执行模式分成两种：同步和异步。</p>
+<blockquote>
+<p>同步模式，就是上面所举的栗子，任务按排列顺序执行,只有当前任务执行完,才会执行下一个任务<br>异步模式,为了解决同步的阻塞问题,异步就出现了,异步就是碰到异步队列时,异步队列会先被暂存起来,只有同步队列执行完之后再执行异步队列</p>
+</blockquote>
+<p>我们来改写一下上面的代码,使其变成一个异步<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">'start'</span>);</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">alert(<span class="string">'hallo'</span>)</span><br><span class="line">&#125;,<span class="number">1000</span>)</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'end'</span>);</span><br></pre></td></tr></table></figure></p>
+<p>这样改动之后呢,代码就会先在控制台打印<code>start</code>,继续在控制台打印<code>end</code>,等待一秒之后,然后在窗口弹出<code>hallo</code>,</p>
+<h2 id="那么什么时候使用异步呢"><a href="#那么什么时候使用异步呢" class="headerlink" title="那么什么时候使用异步呢"></a>那么什么时候使用异步呢</h2><p>我们要知道异步是为了解决什么问题而被推出来的,从前面我们知道同步会阻塞代码的执行,所以只要阻塞代码的执行就用异步,同时所有需要<code>等待的情况</code>都需要使用异步(在浏览器端，耗时很长的操作都应该异步执行，避免浏览器失去响应，最好的例子就是Ajax操作。在服务器端，”异步模式”甚至是唯一的模式，因为执行环境是单线程的，如果允许同步执行所有http请求，服务器性能会急剧下降，很快就会失去响应)</p>
+<h2 id="使用场景以及使用方法"><a href="#使用场景以及使用方法" class="headerlink" title="使用场景以及使用方法"></a>使用场景以及使用方法</h2><blockquote>
+<ol>
+<li>定时任务 <code>setTimeout</code> <code>setInterval</code></li>
+<li>网络请求 <code>ajax</code>请求 动态<code>&lt;img&gt;</code>加载</li>
+<li>事件绑定</li>
+<li>es6中的promise</li>
+</ol>
+</blockquote>
+<ol>
+<li>首先是定时任务看下面栗子<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)&#123;<span class="comment">//同步任务</span></span><br><span class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="comment">//异步任务</span></span><br><span class="line">        <span class="built_in">console</span>.log(i)</span><br><span class="line">    &#125;,<span class="number">1000</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-<ul>
-<li>添加ssh-key</li>
-<li>单击鼠标右键 打开Git Bash,输入下面的命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;your.email&quot; </span><br><span class="line">git config --global user.name &quot;yourname&quot;</span><br></pre></td></tr></table></figure>
+</ol>
+<p>从上面的栗子我们可以看到,<code>for循环</code>是一个同步任务,当它碰到<code>setTimeout</code>时,<code>setTimeout</code>是一个异步任务,此时<code>setTimeout</code>会被暂存起来,然后继续执行<code>for循环</code>,当<code>for循环</code>执行完毕后,此时就会把刚才暂存的异步任务拿出来执行,所以说上面的代码的结果就是等待一秒之后立即输出5个5</p>
+<ol>
+<li><p><code>ajax</code>请求 </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">'start1'</span>);</span><br><span class="line">$.get(<span class="string">'./data.json'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'data'</span>);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'end1'</span>);</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-<ul>
-<li><p>继续创建ssh ,输入下面的命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your.email&quot;</span><br></pre></td></tr></table></figure>
+<li><p>事件绑定 </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//事件异步加载</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'start1'</span>);</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'btn'</span>).addEventListener(<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    alert(<span class="string">'click'</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'end1'</span>);</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>路径和密码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Enter file in which to save the key (//.ssh/id_rsa):  这里写路径,也可以不写,后续输入 y 确认就行</span><br><span class="line">Enter passphrase (empty for no passphrase): 这里是你的密码</span><br><span class="line">Enter same passphrase again: 再次输入密码,这两次密码都不显示</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>执行成功后, 根据提示找到并打开  id_rsa.pub 复制里面的内容</p>
-</li>
-<li>在网页上打开你刚刚注册好的的git,点击头像找到  settings  在打开的页面找到  SSH and GPG keys </li>
-<li>完成<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3></li>
-<li><p>很简单,参照 hexo <a href="https://hexo.io/" target="_blank" rel="noopener">官网</a> </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>你可以现在本地创建一个文件夹,进入到新建的文件夹 ,单击鼠标右键 打开Git Bash,输入以下命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>你就可以看到很多的文件以及文件夹(ps:说明一下)</p>
-<ul>
-<li>node_modules：是依赖包</li>
-<li>public：存放的是生成的页面</li>
-<li>scaffolds：命令生成文章等的模板</li>
-<li>source：用命令创建的各种文章</li>
-<li>themes：主题</li>
-<li>_config.yml：整个博客的配置</li>
-<li>db.json：source解析所得到的</li>
-<li>package.json：项目所需模块项目的配置信息</li>
-</ul>
-</li>
-<li><p>生成页面</p>
-<ul>
-<li>在你的文件夹内执行下面两条命令</li>
-<li><p>第一条命令是生成静态页面,第二条是本地启动</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate </span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>浏览<br>浏览器输入  <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>就可以看到效果。</p>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h3><ul>
-<li>接下来就是一些美化,和部署到  git 上了</li>
-</ul>
+</ol>
+<p>首先会在控制台打印<code>start1</code>,然后继续在控制台打印<code>end1</code>,只有当我们触发点击事件时,才会执行<code>alert(&#39;click&#39;)</code></p>
+<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><p><a href="http://www.ruanyifeng.com/blog/2014/10/event-loop.html" target="_blank" rel="noopener">JavaScript 运行机制详解：再谈Event Loop</a><br><a href="http://www.ruanyifeng.com/blog/2012/12/asynchronous%EF%BC%BFjavascript.html" target="_blank" rel="noopener">Javascript异步编程的4种方法</a><br><a href="http://web.jobbole.com/82291/" target="_blank" rel="noopener">探索Javascript异步编程</a></p>
 
       
     </div>
@@ -514,9 +490,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
-          
-            <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
+            <a href="/tags/JS/" rel="tag"><i class="fa fa-tag"></i> JS</a>
           
         </div>
       
@@ -529,8 +503,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/31/hexo+git 部署简单博客(二)/" rel="next" title="hexo+git 部署简单博客(二)">
-                <i class="fa fa-chevron-left"></i> hexo+git 部署简单博客(二)
+              <a href="/2018/02/05/css3/" rel="next" title="css3弹性布局Flexbox学习笔记">
+                <i class="fa fa-chevron-left"></i> css3弹性布局Flexbox学习笔记
               </a>
             
           </div>
@@ -539,8 +513,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/31/主题的配置/" rel="prev" title="主题的配置">
-                主题的配置 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/12/JS中的原型和原型链和闭包/" rel="prev" title="JS中的原型和原型链和闭包">
+                JS中的原型和原型链和闭包 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -695,7 +669,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注册GitHub账号-连接GitHub"><span class="nav-number">2.</span> <span class="nav-text">注册GitHub账号,连接GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo"><span class="nav-number">3.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#完成"><span class="nav-number">4.</span> <span class="nav-text">完成</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript中单线程的概念"><span class="nav-number">1.</span> <span class="nav-text">JavaScript中单线程的概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#同步与异步"><span class="nav-number">2.</span> <span class="nav-text">同步与异步</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#那么什么时候使用异步呢"><span class="nav-number">3.</span> <span class="nav-text">那么什么时候使用异步呢</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用场景以及使用方法"><span class="nav-number">4.</span> <span class="nav-text">使用场景以及使用方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#链接"><span class="nav-number">4.0.1.</span> <span class="nav-text">链接</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
